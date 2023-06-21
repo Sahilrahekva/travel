@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <style>
+            
+            *{
+                padding: 0;
+                margin: 0;
+            }
+
+            .logo{
+                margin-left: 40px;
+                font-size: 40px;
+                color: rgb(51, 214, 51);
+            }
+
+            #ac{
+                color: rgb(74, 228, 74);
+            }
+
+            .navbar{
+
+                font-size: 25px;
+
+            }
+
+            .navbar ul{
+                margin: 15px;
+                display: flex;
+                list-style-type: none;
+            }
+            .navbar ul li{
+                padding: 15px 20px;
+                position: relative;
+            }
+
+            .navbar ul li a{
+                text-decoration: none;
+                color: white;
+            }
+
+            .content{
+                font-family:cursive;
+                color: white;
+                text-align: center;
+                margin-top: 150px;
+                /* padding-bottom: 190px; */
+
+            }
+            .content h1{
+                font-size: 60px;
+            }
+
+            .content p{
+                font-size: 22px;
+            }
+
+            .header{
+                
+                background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://media.istockphoto.com/id/1137373430/photo/happy-family-running-on-beach.jpg?s=612x612&w=0&k=20&c=NI30iup8MGIa5NV1ENdQ7cpA0N0CKWp8ShAbUR3cFK8=);
+                background-repeat: no-repeat;
+                height: 90vh;
+                background-size: cover;
+                background-position: center;
+            }
+
+/* 
+            #search input{
+                border-radius: 20px;
+              
+               padding-left: 20px;
+               height: 40px;
+               width: 500px;
+            }  */
+
+             .input-group{
+                height: 30px;
+                width: 500px;
+                align-items: center;
+                margin-left: 30%;
+            }
+            #agf{
+                align-items: center;
+            } 
+
+            .book{
+                background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://www.collinsvacationrentals.com/blog/wp-content/uploads/2020/03/Yoga-Beach-Sillouette-.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                margin-left: 8%;
+                margin-right: 8%;
+               color: white;
+               margin-top: 40px;
+               margin-bottom: 40px;
+            }
+
+
+            #clint{
+                font-size: 25px;
+                text-align: center;
+            }
+            #clint i{
+                padding: 8px;
+                background-color: white;
+                color: green;
+                border: 1px solid green;
+                border-radius: 25px;
+             
+            }
+
+            /* body{
+                background-color: rgb(24, 22, 22);
+            }  */
+
+        </style>
+
+        <style>
+
+            .ho:hover{
+                text-shadow: none !important;
+                box-sizing: border-box !important;
+                cursor: pointer !important;
+                transition: all 0.3s ease !important;
+                -webkit-transform: scale(1.1) !important;
+                transform: scale(1.1) !important;
+                z-index: 2;
+                background-color: green;
+                color: white;
+            }
+
+            .ho{
+                border-radius: 10px;
+            }
+            .ho i{
+
+                font-size: 60px;
+             margin-bottom: 15px; 
+             margin-top: 20px; 
+             color: rgb(84, 143, 26);
+
+        
+
+            }
+
+            .ho i:hover{
+                color: white;
+            }
+
+            .sm:hover{
+                text-shadow: none !important;
+                box-sizing: border-box !important;
+                cursor: pointer !important;
+                transition: all 0.3s ease !important;
+                -webkit-transform: scale(1.1) !important;
+                transform: scale(1.1) !important;
+                z-index: 2;
+                /* background-color: green;
+                color: white; */
+            }
+
+
+            .s:hover{
+                text-shadow: none !important;
+                box-sizing: border-box !important;
+                cursor: pointer !important;
+                transition: all 2s ease !important;
+                -webkit-transform: scale(1.1) !important;
+                transform: scale(1.1) !important;
+                z-index: 2;
+               
+            }
+
+            #ohh:hover{
+                text-shadow: none !important;
+                background-color: rgb(40, 214, 40) !important;
+                cursor: pointer !important;
+                box-sizing: border-box !important;
+                transition: all ease 0.3s !important;
+                /* -webkit-transform: scale(1.1) !important; */
+                z-index: 2;
+                color: white;
+            }
+
+               /* .sm i{
+
+                font-size: 60px;
+             margin-bottom: 15px; 
+             margin-top: 20px; 
+             color: rgb(84, 143, 26);
+
+        
+
+            } */
+            .footer{
+                background-color: black;
+                color: white;
+            }
+
+            #jk p i:hover{
+                text-shadow: none !important;
+                box-sizing: border-box !important;
+                cursor: pointer !important;
+                transition: all 0.3s ease !important;
+                -webkit-transform: scale(1.1) !important;
+                transform: scale(1.1) !important;
+                z-index: 2;
+                background-color: rgb(33, 33, 226);
+            }
+
+        </style>
+
+
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <div class="navbar">
+
+            <div class="logo"><b> <i class="fa-sharp fa-solid fa-location-dot"></i> Tourist</b></div>
+
+            <ul>
+                <li><a href="index.html" ><b>Home</b></a></li>
+                <li><a href="about.html" id="ac"><b>About</b></a></li>
+                <li><a href="service.html"><b>Service</b></a></li>
+                <li><a href="pages.html"><b>Pages</b></a></li>
+                <li><a href="contact.html"><b>Contact</b></a></li>
+                <li><a href="register.html" class="btn btn-success"><b>Register</b></a></li>
+            </ul>
+        </div>
+
+
+
+        <div class="content" data-aos="zoom-in" data-aos-duration="2000">
+
+            <h1  style="text-align: center;" ><b>About Us</b></h1>
+
+            <p style="text-align: center ; list-style-type: none;"><a href="index.html" style="text-decoration: none;   color: rgb(51, 214, 51);">Home /</a> <a href="pages.html" style="text-decoration: none;   color: rgb(51, 214, 51);" >Pages /</a>  <a href="about.html" style="text-decoration: none; color: white;">About</a></p>
+
+            <!-- <h1><b>Enjoy Your Vacation With Us</b></h1>
+
+            <p>tempore erat elitr rebum at clita diam amet diam at eos erat ipsum lorem site</p>
+
+           
+
+          <div id="agf">
+            <div class="input-group">
+                <input type="search" placeholder="search" class="form-control">
+                <div class="input-group-append">
+                    <a href="" class="btn btn-success">Search</a>
+                </div>
+            </div>
+          </div>  -->
+
+        </div>
+
+    </header>
+
+    <main style="padding-top: 5px;">
+
+        <div class="container">
+            <div class="row my-5"  >
+                <div class="col-md-6">
+                    <div class="card sm shadow-lg" data-aos="zoom-in-up">
+                        <img src="https://valefyachts.com/wp-content/uploads/2018/10/quad-new-t-chartering-wings-2.jpg" alt="" style="height: 65vh; cursor: pointer;">
+              
+                    </div>
+                </div>
+                <div class="col-md-6 shadow-lg " data-aos="zoom-in-up" >
+                    <h2 style="color: green;">About Us ----</h2>
+                    <h1 style="font-family: sans-serif;"><b>Welcome to <span style="color: rgb(116, 211, 21);">Tourist</span></b></h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero est quod magnam cumque vel mollitia iusto itaque sequi ducimus.</p>
+             
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolorem, ea necessitatibus recusandae nemo neque quod error at nostrum eveniet officiis atque obcaecati facilis voluptates doloremque veritatis officia autem.</p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><b>-></b> First class Fligts</p>
+                            <p> <b>-></b> 5 Star Accommodations</p>
+                            <p><b>-></b> Premium City Tours</p>
+                        </div>
+                        <div class="col-md-6">
+
+                          <p><b>-></b> Handpicked Hotels</p>
+                          <p><b>-></b> Latest Model Vehicles</p>
+                          <p><b>-></b> 24/7 Service</p>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <button class="btn py-3 px-4" style="background-color: rgb(87, 160, 14); color: white;">Read More</button>
+                
+
+                </div>
+            </div>
+        </div>
+
+
+
+       
+
+
+                <div class="travel " style="margin-top: 30px; margin-bottom: 20px;">
+                    <div class="container">
+                        <p style="color: green; text-align: center; font-size: 20px;" data-aos="zoom-in-up"><b>----Travel Guide----</b></p>
+                        <h1 style="text-align: center;" data-aos="zoom-in-up">Meet Our Guide</h1>
+                        <div class="row">
+                            <div class="col-md-3" data-aos="zoom-in-up">
+
+                                <div class="card sm shadow-lg">
+                                    <img src="https://img.freepik.com/premium-photo/smiling-blonde-young-woman-with-her-crossed-arms-standing-against-gray-backdrop_23-2148028976.jpg" alt="">
+                                    <div class="card-body">
+                                        <p id="clint"><i class="fa-brands fa-facebook" id="ohh"></i> <i class="fa-brands fa-twitter" id="ohh"></i> <i class="fa-brands fa-instagram" id="ohh"></i></p>
+                                        <p style="text-align: center; font-size: 22px;"><b>Full Name</b></p>
+                                        <p style="text-align: center;">Designation</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+
+                                <div class="card sm shadow-lg" data-aos="zoom-in-up">
+                                    <img src="https://previews.123rf.com/images/stocking/stocking1208/stocking120800295/14748492-portrait-of-a-smiling-handsome-businessman.jpg" alt="">
+                                    <div class="card-body">
+                                        <p id="clint"><i class="fa-brands fa-facebook" id="ohh"></i> <i class="fa-brands fa-twitter" id="ohh"></i> <i class="fa-brands fa-instagram" id="ohh"></i></p>
+                                        <p style="text-align: center; font-size: 22px;"><b>Full Name</b></p>
+                                        <p style="text-align: center;">Designation</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+
+                                <div class="card sm shadow-lg" data-aos="zoom-in-up">
+                                    <img src="https://img.freepik.com/free-photo/portrait-stylish-young-pretty-woman-smiling-grey-t-shirt-isolated-natural-look-long-brown-hair-sincere-smile_285396-875.jpg" alt="">
+                                    <div class="card-body">
+                                        <p id="clint"><i class="fa-brands fa-facebook" id="ohh"></i> <i class="fa-brands fa-twitter" id="ohh"></i> <i class="fa-brands fa-instagram" id="ohh"></i></p>
+                                        <p style="text-align: center; font-size: 22px;"><b>Full Name</b></p>
+                                        <p style="text-align: center;">Designation</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+
+                                <div class="card sm shadow-lg" data-aos="zoom-in-up">
+                                    <img src="https://t4.ftcdn.net/jpg/02/87/35/99/360_F_287359914_HU3P7rhmyJMyyhBBcILcWd2S7DDwkJSs.jpg" alt="">
+                                    <div class="card-body">
+                                        <p id="clint"><i class="fa-brands fa-facebook" id="ohh"></i> <i class="fa-brands fa-twitter" id="ohh"></i> <i class="fa-brands fa-instagram" id="ohh"></i></p>
+                                        <p style="text-align: center; font-size: 22px;"><b>Full Name</b></p>
+                                        <p style="text-align: center;">Designation</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+               
+                    
+
+
+    </main>
+
+    <footer>
+
+
+        <div class="footer" data-aos="zoom-in-up">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <p style="font-size: 25px;"><b>Company</b></p>
+                        <p>> About Us</p>
+                        <p>> Contact Us</p>
+                        <p>> Privecy Policy</p>
+                        <p>> Terms & Conditions</p>
+                        <p>> FAQs & Help</p>
+
+                    </div>
+                    <div class="col-md-4">
+                        <p style="font-size: 25px;"><b>Contact</b></p>
+                        <p> <i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</p>
+                        <p> <i class="fa-solid fa-phone"></i> +0123456789</p>
+                        <p> <i class="fa-solid fa-envelope"></i> mail@domain.com</p>
+                        <div id="jk">
+                            <p style="font-size: 22px;"><i class="fa-brands fa-twitter" style="padding: 10px; border: 2px solid white; border-radius: 25px;"></i> <i class="fa-brands fa-facebook"    style="padding: 10px; border: 2px solid white; border-radius: 25px;"   ></i> <i class="fa-brands fa-youtube"   style="padding: 10px; border: 2px solid white; border-radius: 25px;"  ></i> <i class="fa-brands fa-linkedin"   style="padding: 10px; border: 2px solid white; border-radius: 25px;"  ></i></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p style="font-size: 25px;"><b>Gallery</b></p>
+                        <div class="row">
+                            <div class="col-md-4 ">
+                                <div class="card my-2 sm">
+                                    <img src="https://static.vecteezy.com/system/resources/previews/007/313/489/large_2x/woman-standing-on-the-beach-looking-at-beautiful-ocen-in-tropical-island-free-photo.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card my-2 sm">
+                                    <img src="https://t4.ftcdn.net/jpg/05/87/05/07/360_F_587050711_aJlAMnalNWD9epsj6hg3L7Y07uc3JMsS.jpg" alt="" style="height: 68px;">
+                                </div>
+                            </div>
+                            <div class="col-md-4  ">
+                                <div class="card my-2 sm">
+                                    <img src="https://thumbs.dreamstime.com/b/nang-yuan-island-thailand-18892117.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card my-2 sm">
+                                    <img src="https://travelyourway.net/wp-content/uploads/2023/02/best-things-to-do-in-Phuket-Thailand-5-757x1024.jpg" alt="" style="height: 70px;">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card my-2 sm">
+                                    <img src="https://previews.123rf.com/images/variklena/variklena2006/variklena200600071/148476925-stylish-female-girl-in-white-dress-discovering-and-searching-famous-places-traveling-alone-in.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card my-2 sm">
+                                    <img src="https://tourscanner.com/blog/wp-content/uploads/2017/10/Mauritius-island.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="col-md-4">
+
+                        <p style="font-size: 25px;"><b>Gallery</b></p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Email">
+                            </div>
+                            <div class="col-md-6">
+                                <a href="" class="btn btn-success"><b>Sign Up</b></a>
+                            </div>
+                        </div>                      
+                    </div> -->
+
+
+
+                </div>
+            </div>
+
+            
+        </div>
+
+    </footer>
+
+    <script>
+        AOS.init({
+            duration:1500
+        });
+      </script>
+
+</body>
+
+</html>
